@@ -16,6 +16,8 @@ python-gnupg = "^0.5.2"
 sqlalchemy = "^2.0.30"
 pydantic = "^2.7.1"
 alembic = "^1.13.1"
+sqlalchemy-utils = "^0.41.2"
+yarl = "^1.9.4"
 
 
 [build-system]
