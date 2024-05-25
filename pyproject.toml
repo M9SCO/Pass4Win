@@ -12,6 +12,10 @@ black = "^24.4.2"
 flet = "^0.22.1"
 flake8 = "^7.0.0"
 pytest = "^8.2.1"
+python-gnupg = "^0.5.2"
+sqlalchemy = "^2.0.30"
+pydantic = "^2.7.1"
+alembic = "^1.13.1"
 
 
 [build-system]
