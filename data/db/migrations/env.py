@@ -8,6 +8,8 @@ from alembic import context
 from data.db.models.BaseModel import Base
 from data.db.models.SettingsProfile import SettingsProfile
 
+from config import config as global_config
+
 __all__ = ("SettingsProfile",)
 
 # this is the Alembic Config object, which provides
@@ -23,7 +25,7 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-config.set_main_option("sqlalchemy.url", "sqlite:///resources/local.db")
+config.set_main_option("sqlalchemy.url", global_config.db_url)
 target_metadata = Base.metadata
 
 
