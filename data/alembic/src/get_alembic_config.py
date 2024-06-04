@@ -1,9 +1,9 @@
-import typing
 import types
+import typing
 
 import alembic.config
 
-from data.alembic.src.alembic_get_revisions import make_alembic_config
+from data.alembic.src.make_alembic_config import make_alembic_config
 
 
 def get_alembic_config(url: typing.Optional[str] = None) -> alembic.config.Config:
