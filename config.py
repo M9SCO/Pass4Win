@@ -1,5 +1,6 @@
-import pydantic
 import os
+
+import pydantic
 
 
 class Config(pydantic.BaseModel):
@@ -10,9 +11,11 @@ class Config(pydantic.BaseModel):
     @property
     def resource_path(self):
         return self.__resource_path
+
     @property
     def logging_file(self):
         return self.__logging_file
+
     @property
     def db_file(self):
         return self.__db_file
