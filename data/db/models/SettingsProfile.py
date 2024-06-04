@@ -13,5 +13,3 @@ class SettingsProfile(BaseModel):
     path_to_gpg: Mapped[str] = mapped_column()
     path_to_external_gpg: Mapped[str] = mapped_column()
     path_to_stored_passwords: Mapped[str] = mapped_column()
-
-    test_args: Mapped[bool] = mapped_column(nullable=False)
